@@ -1,0 +1,25 @@
+﻿<Window x:Class="UI.ChangeItems.ChangeProduct"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UI.ChangeItems"
+        mc:Ignorable="d"
+        Title="ChangeProduct" Name="ChangingProductForm" Height="206" Width="369" ResizeMode="NoResize" Background="#FF0F0F0F">
+    <Grid>
+        <Label Content="Введите идентификационный номер изменяемого товара" HorizontalAlignment="Left" Margin="18,39,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="SearchId" HorizontalAlignment="Left" Margin="28,83,0,0" TextWrapping="Wrap" Text="" BorderBrush="Black" VerticalAlignment="Top" Width="120" MinWidth="300"/>
+        <Button Content="Поиск" Click="FindId" Margin="146,130,0,0" VerticalAlignment="Top"/>
+        <Label Name="PrevProductName" Content="Название изменяемого товара: " HorizontalAlignment="Left" Margin="432,39,0,0" VerticalAlignment="Top"/>
+        <Label Name="PrevProductPrice" Content="Цена изменяемого товара: " HorizontalAlignment="Left" Margin="432,70,0,0" VerticalAlignment="Top"/>
+        <Label Name="EnterNewNameLabel" Content="Введите новое имя" HorizontalAlignment="Left" Margin="122,197,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="NewName" HorizontalAlignment="Left" Margin="320,190,0,0" TextWrapping="Wrap" Text="" BorderBrush="White" VerticalAlignment="Top" Width="120" MinWidth="300"/>
+        <Label Name="EnterNewPriceLabel" Content="Введите новую цену" HorizontalAlignment="Left" Margin="118,255,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="NewPrice" HorizontalAlignment="Left" Margin="320,248,0,0" TextWrapping="Wrap" Text="" BorderBrush="White" VerticalAlignment="Top" Width="120" MinWidth="300"/>
+        <Button Name="Confirm" Click="Update" Content="Подтвердить" BorderBrush="White" Margin="0,379,0,0" VerticalAlignment="Top" HorizontalAlignment="Center"/>
+        <Label Name="PrevCount" Content="Количество изменяемого товара: " HorizontalAlignment="Left" Margin="432,100,0,0" VerticalAlignment="Top"/>
+        <Label Name="NewCountLabel" Content="Введите новое количество товара" HorizontalAlignment="Left" Margin="84,312,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="NewCountText" BorderBrush="White" HorizontalAlignment="Left" Margin="320,305,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" MinWidth="300"/>
+
+    </Grid>
+</Window>

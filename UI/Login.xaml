@@ -1,0 +1,15 @@
+﻿<Window x:Class="UI.Login"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UI"
+        mc:Ignorable="d"
+        Title="Login" Height="217" Width="306" Background="#FF0F0F0F" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Label Content="Introduce yourself" HorizontalAlignment="Center" Margin="0,23,0,0" VerticalAlignment="Top" RenderTransformOrigin="-6.469,0.059"/>
+        <TextBox  Name="Name" HorizontalAlignment="Left" BorderBrush="Black" Margin="22,66,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="232" MinWidth="250"/>
+        <Button Content="Enter" Click="LoginBtn" Margin="113,118,0,0" VerticalAlignment="Top" Width="76"/>
+
+    </Grid>
+</Window>

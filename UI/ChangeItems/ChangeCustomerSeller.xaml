@@ -1,0 +1,19 @@
+﻿<Window x:Class="UI.ChangeItems.ChangeCustomerSeller"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UI.ChangeItems"
+        mc:Ignorable="d"
+        Title="ChangeCustomerSeller" Height="426" Width="368" ResizeMode="NoResize" Background="#FF0F0F0F">
+    <Grid>
+        <Label Content="Введите идентификационный номер объекта" HorizontalAlignment="Center" Margin="0,32,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.503,0.563"/>
+        <TextBox Name="SearchId" Margin="34,69,0,0" TextWrapping="Wrap" BorderBrush="Black" VerticalAlignment="Top" Width="120" MinWidth="300" HorizontalAlignment="Left"/>
+        <Button Content="Поиск" Margin="151,123,0,0" VerticalAlignment="Top" Click="FindId"/>
+        <Label Name="PreviousName" Content="" HorizontalAlignment="Center" Margin="0,179,0,0" VerticalAlignment="Top"/>
+        <Label Name="EnterNewNameLabel" Content="" HorizontalAlignment="Left" Margin="129,231,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="EnterNewNameTextBox" HorizontalAlignment="Center" Visibility="Hidden" Margin="0,264,0,0" BorderBrush="Gray" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" MinWidth="300"/>
+        <Button Name="Enter" Click="UpdateItem" BorderBrush="White" Content="Подтвердить" Visibility="Hidden" Margin="129,323,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
